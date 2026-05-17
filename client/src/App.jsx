@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
 import confetti from 'canvas-confetti';
 
-const SERVER_URL = import.meta.env.SERVER_URL || 'http://localhost:3001';
+const SERVER_URL = import.meta.env.API_URL || 'http://localhost:3001';
 const socket = io(SERVER_URL);
 
 const avatars = ['😊', '😄', '🥰', '😎', '🤗', '😇', '🤩', '😸'];
